@@ -1,47 +1,36 @@
-<style>
-    body {
-        margin: 0;
-        text-align: center;
-        font-family: Segoe UI;
-    }
-    h1 {
-        margin-top: 15%;
-        font-size: 40px;
-    }
-
-    p {
-        margin: 20px;
-        font-size: 20px;
-    }
-
-    input {
-        width: 20%;
-        height: 3%;
-        border: 1px solid black;
-        border-radius: 10px;
-        padding-left: 7.5px;
-    }
-
-    input:focus {
-        outline: none;
-    }
-</style>
-<title>Polygon Unbloxer</title>
-    <link rel="icon" href="kix-favicon7.ico" type="image/icon type">
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+	<title>Polygon 2.0</title>
+</head>
+<body>
     <div id="content">
-        <h1>Polygon</h1>
-        <p>Browse freely, without restrictions.</p>
-        <input placeholder="Ex: iceyproxy.ga" autofocus type="text" id="text">
+	<div class="sectionleft">
+		<h1 class="logo">Polygon</h1>
+		<p>New: Quick links to popular websites</p>
+		<input placeholder="Ex: thesimpleunblocker.com" id="input">
+	</div>
+	<div class="sectionright">
+		<div class="header">
+			<h1>Quick links:</h1><br>
+			<a onclick="youtube()" href="#">YouTube</a><br><br>
+			<a onclick="soundcloud()" href="#">SoundCloud (Soon)</a><br><br>
+			<a onclick="spotify()" href="#">Spotify</a><br><br>
+			<a onclick="newgrounds()" href="#">Newgrounds</a><br><br>
+			<a onclick="netflix()" href="#">Netflix</a><br><br>
+			<a onclick="discord()" href="#">Discord (Soon)</a><br><br>
+			<a onclick="duckduckgo()" href="#">Duckduckgo</a><br><br>
+			<a onclick="linuxvm()" href="#">Linux VM</a><br><br>
+			<a onclick="simpleunblocker()" href="#">Simple Unblocker</a><br><br>
+		</div><br><br>
+		<p>Copy this project on github:</p>
+		<a class="github-button" href="https://github.com/thepolygonproject/thepolygonproject.github.io/fork" data-icon="octicon-repo-forked" aria-label="Fork ntkme/github-buttons on GitHub">Fork</a>
+		<!-- Tag above must stay intact for use -->
+	</div>
     </div>
-    <iframe id="iframe" frameborder="0" width="0%" height="0%"></iframe>
-<script>
-        document.addEventListener('keydown', function (event) {
-            if (event.keyCode === 13) {
-                var text = "https://" + document.getElementById("text").value;
-                document.getElementById('iframe').src = text;
-                document.getElementById('iframe').width = "100%";
-                document.getElementById('iframe').height = "100%";
-                document.getElementById("content").innerHTML = '';
-            }
-        });
-</script>
+    <iframe src="https://thesimpleunblocker.com" frameborder="0" height="0%" width="0%" id="iframe"></iframe>
+	<script src="script.js"></script>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
